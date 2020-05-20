@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #333;
+}
+
+ul {
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	/*3d空间*/
+	transform-style: preserve-3d;
+	animation: box 20s linear infinite;
+}
+
+@keyframes box {
+
+	/*3d旋转 x y z deg*/
+	from {
+		transform: rotate3d(0, 0, 0, 0deg);
+	}
+
+	to {
+		transform: rotate3d(1, 1, 1, 360deg);
+	}
+}
+
+li {
+	width: 500px;
+	height: 500px;
+	list-style: none;
+	border: 1px solid black;
+	position: absolute;
+	opacity: 0.8;
+	box-shadow: 0px 0px 10px white;
+}
+
+li:nth-child(1) {
+	background: url(file:///G:/tt/wx_camera_1574259870289.jpg);
+	background-position: center;
+	background-size: cover;
+	transform: translateZ(200px);
+}
+
+/*后*/
+li:nth-child(2) {
+	background: url(file:///G:/tt/IMG_20191203_212155.jpg);
+	background-position: center;
+	background-size: cover;
+	transform: translateZ(-200px);
+}
+
+/*左*/
+li:nth-child(3) {
+	background: url(file:///G:/tt/mmexport1584939847284.jpg);
+	background-position: center;
+	background-size: cover;
+	transform: rotateY(90deg) translateZ(-200px);
+}
+
+/*右*/
+li:nth-child(4) {
+	background: url(file:///G:/tt/mmexport1585890624919.jpg);
+	background-position: center;
+	background-size: cover;
+	transform: rotateY(90deg) translateZ(200px);
+}
+
+/*上*/
+li:nth-child(5) {
+	background: url(file:///G:/tt/mmexport1585890635847.jpg);
+	background-position: center;
+	background-size: cover;
+	transform: rotateX(90deg) translateZ(200px);
+}
+
+li:nth-child(6) {
+	background: url(a7cd49a8c4853d1.jpg);
+	background-position: center;
+	background-size: cover;
+	transform: rotateX(90deg) translateZ(-200px);
+}
+
+ul:hover {
+	animation-play-state: paused;
+}
