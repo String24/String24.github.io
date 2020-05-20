@@ -16,14 +16,14 @@ ul {
 	left: 0;
 	right: 0;
 	margin: auto;
-	/*3d空间*/
+	/*3d驴脮录盲*/
 	transform-style: preserve-3d;
 	animation: box 20s linear infinite;
 }
 
 @keyframes box {
 
-	/*3d旋转 x y z deg*/
+	/*3d脨媒脳陋 x y z deg*/
 	from {
 		transform: rotate3d(0, 0, 0, 0deg);
 	}
@@ -44,39 +44,39 @@ li {
 }
 
 li:nth-child(1) {
-	background: url(file:///G:/tt/wx_camera_1574259870289.jpg);
+	background: url(wx_camera_1574259870289.jpg);
 	background-position: center;
 	background-size: cover;
 	transform: translateZ(200px);
 }
 
-/*后*/
+/*潞贸*/
 li:nth-child(2) {
-	background: url(file:///G:/tt/IMG_20191203_212155.jpg);
+	background: url(IMG_20191203_212155.jpg);
 	background-position: center;
 	background-size: cover;
 	transform: translateZ(-200px);
 }
 
-/*左*/
+/*脳贸*/
 li:nth-child(3) {
-	background: url(file:///G:/tt/mmexport1584939847284.jpg);
+	background: url(mmexport1584939847284.jpg);
 	background-position: center;
 	background-size: cover;
 	transform: rotateY(90deg) translateZ(-200px);
 }
 
-/*右*/
+/*脫脪*/
 li:nth-child(4) {
-	background: url(file:///G:/tt/mmexport1585890624919.jpg);
+	background: url(mmexport1585890624919.jpg);
 	background-position: center;
 	background-size: cover;
 	transform: rotateY(90deg) translateZ(200px);
 }
 
-/*上*/
+/*脡脧*/
 li:nth-child(5) {
-	background: url(file:///G:/tt/mmexport1585890635847.jpg);
+	background: url(mmexport1585890635847.jpg);
 	background-position: center;
 	background-size: cover;
 	transform: rotateX(90deg) translateZ(200px);
